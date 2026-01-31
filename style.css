@@ -1,0 +1,178 @@
+/* CSS reset */
+body, header, nav, main, footer, h1, div, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #fff3f3;
+}
+
+nav, h1 {
+    font-family: "Oswald", sans-serif;
+}
+
+footer, main {
+    font-family: "Montserrat", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    width: 25%;
+    float: left;
+}
+
+.hero {
+    clear: both;
+    position: relative;
+}
+
+nav {
+    float: right;
+    width: 70%;
+    margin: 3em 1em 0 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav li:hover {
+    background-color: #ffc9c9;
+}
+
+nav li a {
+    display: block;
+    color: #4D3636;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+main {
+    background-color: #fff;
+    padding: 1.5%;
+    clear: left;
+}
+
+footer {
+    background-color: #F76D6D;
+    color: #472626;
+    padding: 2%;
+}
+
+nav span {
+    background-color: #F76D6D;
+    font-size: 1.2em;
+}
+
+main h1 {
+    text-align: center;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#feature {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#feature img {
+    width: 75%;
+}
+
+#feature p {
+    padding-top: 15%;
+    padding-right: 25%;
+    color: #ff6060;
+    font-size: 110%;
+}
+
+main > p {
+    text-align: center;
+}
+
+main a {
+    background-color: #ffa4a4;
+
+}
+
+.grid_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+}
+
+.grid_section .about_text ul, .grid_section .contact_information ul {
+    padding-left: 1em;
+}
+
+.menu_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    row-gap: 2em;
+}
+
+.menu_grid img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.menu_grid p {
+    text-decoration: underline;
+}
+
+.booking_form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 3em;
+}
+
+.booking_form .seating label{
+    display: inline-block;
+}
+
+fieldset {
+    width: 75%;
+}
+
+.booking_form fieldset label {
+    display: block;
+    margin-top: 0.75em;
+}
+
+.booking_form input, .booking_form textarea {
+    background-color: #ffc7c7;
+    border: 1px solid black;
+    border-radius: 2px;;
+}
+
+.submit {
+    grid-column: 1 / -1;
+    justify-self: center;
+    border: 1px solid #472626;
+    border-radius: 10px;
+    height: 50px;
+    width: 10%;
+    font-size: 18px;
+    color: #4D3636;
+    font-weight: bold;
+}

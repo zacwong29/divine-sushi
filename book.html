@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/divine_sushi_logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="validate.js"></script>
+    <title>Divine Sushi</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><img src="images/divine_sushi_logo_v2.PNG" alt="Divine Sushi logo" height="152" width="150"></a>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="book.html"><span>Book Now</span></a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Make a Booking</h1>
+            <p>Please use the form below to make a booking:</p>
+            <form name="reservation" action="submitted.html" onsubmit="return validateReservation()">
+                <div class="booking_form">
+                    <div class="form_section">
+                        <fieldset>
+                            <legend>Your Details</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                        </fieldset>
+                    </div>
+
+                    <div class="form_section">
+                        <fieldset>
+                            <legend>Reservation Details</legend>
+                        <label for="number_of_people">Number of people:</label>
+                        <input type="number" id="number_of_people" name="number_of_people">
+
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date">
+
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time">
+                        </fieldset>
+                    </div>
+                    
+                    <div class="form_section">
+                        <fieldset>
+                            <legend>Seating Details</legend>
+                        <p>Where would you like to sit?</p>
+                        <div class="seating">
+                            <label for="inside"><input type="radio" id="inside" name="seating">Inside</label>    
+                            <label for="outside"><input type="radio" id="outside" name="seating">Outside</label>
+                            
+                        </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="form_section">
+                        <fieldset>
+                            <legend>Other Important Details</legend>
+                        <label for="other_information">Please tell us more information here (optional):</label>
+                        <textarea id="other_information" name="other_information" rows="5" cols="35"></textarea>
+                        </fieldset>
+                    </div>
+
+                    <input type="submit" id="submit" value="SUBMIT" class="submit">
+                </div>
+            </form>
+            
+        </main>
+
+        <footer>
+            <p>Divine Sushi &trade;</p>
+            <p>&copy; Copyright 2026. All Rights Reserved.</p>
+            <p><a href="mailto: contact@divinesushi.com">contact@divinesushi.com</a></p>
+        </footer>
+    </div>
+
+    
+</body>
+</html>
